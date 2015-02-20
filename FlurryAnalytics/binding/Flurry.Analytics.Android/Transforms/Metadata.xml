@@ -4,8 +4,6 @@
   <remove-node path="/api/package[starts-with(@name, 'com.flurry.sdk')]" />
 
   <remove-node path="/api/package[@name='com.flurry.android']/class[@name='InstallReceiver']" />
-  <remove-node path="/api/package[@name='com.flurry.android']/class[@name='PurchaseState']" />
-  <remove-node path="/api/package[@name='com.flurry.android']/class[@name='PurchaseType']" />
   <remove-node path="/api/package[@name='com.flurry.android']/interface[@name='Constants']" />
 
   <!-- use C# namespaces -->
