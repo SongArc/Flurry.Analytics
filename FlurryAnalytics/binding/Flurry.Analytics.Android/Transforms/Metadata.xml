@@ -24,6 +24,13 @@
   <!-- hide internal members -->
   <attr path="/api/package[@name='com.flurry.android']/class[@name='FlurryAgent']/method[@name='setGender']" name="visibility">internal</attr>
 
+  <!-- rename methods -->
+  <attr path="/api/package[@name='com.flurry.android']/class[@name='FlurryAgent']/method[@name='onStartSession']" name="managedName">StartSession</attr>
+  <attr path="/api/package[@name='com.flurry.android']/class[@name='FlurryAgent']/method[@name='onEndSession']" name="managedName">EndSession</attr>
+  <attr path="/api/package[@name='com.flurry.android']/class[@name='FlurryAgent']/method[@name='setUserId']" name="managedName">SetUserId</attr>
+  <attr path="/api/package[@name='com.flurry.android']/class[@name='FlurryAgent']/method[@name='logEvent']" name="managedName">LogEvent</attr>
+  <attr path="/api/package[@name='com.flurry.android']/class[@name='FlurryAgent']/method[@name='onError']" name="managedName">LogError</attr>
+  
   <!-- rename parameters -->
   <attr path="/api/package[@name='com.flurry.android']/class[@name='FlurryAgent']/method[@name='init']/parameter[@name='p0']" name="name">context</attr>
   <attr path="/api/package[@name='com.flurry.android']/class[@name='FlurryAgent']/method[@name='onStartSession']/parameter[@name='p0']" name="name">context</attr>
